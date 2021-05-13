@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;900&display=swap" rel="stylesheet">
     <title>Web World</title>
 </head>
 
@@ -19,23 +23,26 @@
             <img src="img/linkedin.png" alt="Linkedin image">
         </div>
     </header>
-    <nav id="menu">
-        <ul>
-            <li><a href="/">HOME</a></li>
-            <li><a href="/">ABOUT US</a></li>
-            <li><a href="/">SERVICE</a></li>
-            <li><a href="/">PAGES</a></li>
-            <li><a href="/">BLOG</a></li>
-            <li><a href="/">CONTACT US</a></li>
-        </ul>
 
-        <input type="search" name="search" id="search">
-        <button type="submit">
-            <img src="img/search.png" alt="Search in the web site" />
-        </button>
-    </nav>
+    <main id="container">
+        <nav id="menu">
+            <ul class="navigation">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/">ABOUT US</a></li>
+                <li><a href="/">SERVICE</a></li>
+                <li><a href="/">PAGES</a></li>
+                <li><a href="/">BLOG</a></li>
+                <li><a href="/">CONTACT US</a></li>
+            </ul>
 
-    <main>
+            <div class="search">
+                <input type="search" name="search" id="search">
+                <button type="submit">
+                    <img src="img/search.png" alt="Search in the web site" />
+                </button>
+            </div>
+        </nav>
+
         <section id="carousel">
             <img src="img/anterior.png" alt="Voltar uma imagem">
             <img src="img/banner.png" alt="">
@@ -86,7 +93,7 @@
                     </p>
                 </li>
                 <li>
-                    <img src="img/policeCar.png" alt="">
+                    <img src="img/tree.png" alt="">
                     <h3>
                         Lorem Ipsum is simply
                     </h3>
@@ -96,7 +103,7 @@
                     </p>
                 </li>
                 <li>
-                    <img src="img/policeCar.png" alt="">
+                    <img src="img/wheat.png" alt="">
                     <h3>
                         Lorem Ipsum is simply
                     </h3>
@@ -106,7 +113,7 @@
                     </p>
                 </li>
                 <li>
-                    <img src="img/policeCar.png" alt="">
+                    <img src="img/tree.png" alt="">
                     <h3>
                         Lorem Ipsum is simply
                     </h3>
@@ -116,7 +123,7 @@
                     </p>
                 </li>
                 <li>
-                    <img src="img/policeCar.png" alt="">
+                    <img src="img/wheat.png" alt="">
                     <h3>
                         Lorem Ipsum is simply
                     </h3>
@@ -139,7 +146,7 @@
             </ul>
         </section>
 
-        <section id="partners">
+        <div id="partners">
             <ul>
                 <li>
                     <img src="img/dribbble.png" alt="">
@@ -154,10 +161,12 @@
                     <img src="img/puma.png" alt="">
                 </li>
             </ul>
-        </section>
+        </div>
     </main>
 
     <footer>
+
+
     </footer>
 </body>
 

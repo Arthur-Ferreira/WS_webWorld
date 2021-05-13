@@ -1,0 +1,90 @@
+/* Variables*/
+
+:root {
+    --dark-background: #252323;
+    --light-background: #FFFFFF;
+    --photos-background: #EEEEEE;
+    --spotlight-background: #4D4C4F;
+
+    --menu-color: #A5A5A5;
+    --menu-hover: #00BAC6;
+    --subtitle-color: #7B7B7B;
+
+    --font: 'Inter', sans-serif;
+}
+
+/* General styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    
+    box-sizing: border-box;
+    font-family: var(--font);
+    
+    list-style: none;
+    text-decoration: none;
+}
+
+/* General styles */
+
+#header {
+    background-color: var(--dark-background);
+    
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+    height: 3.5rem;
+}
+
+.social_midea img{
+    margin: .1rem .1rem  0 .1rem;
+    padding: .4rem;
+
+    cursor: pointer;
+}
+
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+    line-height: 4.5rem;
+    
+    font-size: .9rem;
+    
+}
+
+#menu a{
+    color: var(--menu-color);
+
+    padding: 1rem .5rem 2rem 0;
+    margin: 0 .1rem;
+
+    border-bottom: var(--menu-color) solid .2rem;
+}
+
+#menu a:hover{
+    color: var(--menu-hover);
+
+    padding: 1rem .5rem 2rem 0;
+
+    border-bottom: var(--menu-hover) solid .2rem;
+}
+
+
+
+.navigation {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
