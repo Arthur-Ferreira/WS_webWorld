@@ -13,41 +13,71 @@
 </head>
 
 <body>
-    <header id="header">
-        <img src="img/logo.png" alt="logo" />
-
-        <div class="social_midea">
-            <img src="img/rss.png" alt="">
-            <img src="img/facebook.png" alt="Facebook image">
-            <img src="img/twitter.png" alt="Twitter image">
-            <img src="img/linkedin.png" alt="Linkedin image">
-        </div>
-    </header>
 
     <main id="container">
-        <nav id="menu">
-            <ul class="navigation">
-                <li><a href="/">HOME</a></li>
-                <li><a href="/">ABOUT US</a></li>
-                <li><a href="/">SERVICE</a></li>
-                <li><a href="/">PAGES</a></li>
-                <li><a href="/">BLOG</a></li>
-                <li><a href="/">CONTACT US</a></li>
-            </ul>
 
-            <div class="search">
-                <input type="search" name="search" id="search">
-                <button type="submit">
-                    <img src="img/search.png" alt="Search in the web site" />
-                </button>
+        <header id="header">
+
+            <div id="menu">
+
+                <a href="/">
+                    <img class="logo" src="img/logo.png" alt="logo" />
+                </a>
+             <!--   
+                <div class="search">
+
+                    <input type="search" name="search" id="search">
+                    <button type="submit">
+                        <img src="img/search.png" alt="Search in the web site" />
+                    </button>
+                </div>
+            -->
+                <label for="carte" class="open_carte">&#9776;</label>
+                <input type="checkbox" id="carte">
+
+                <ul class="navigation">
+                    <li>
+                        <a href="/">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            ABOUT US
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            SERVICE
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            PAGES
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            BLOG
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            CONTACT US
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </header>
 
-        <section id="carousel">
+
+        <div id="carousel">
+
             <img src="img/anterior.png" alt="Voltar uma imagem">
             <img src="img/banner.png" alt="">
             <img src="img/proximo.png" alt="Proxima imagem">
-        </section>
+
+        </div>
 
         <section id="content">
             <h2>
@@ -168,6 +198,8 @@
 
 
     </footer>
+    
+    </main>
 </body>
 
 </html>
