@@ -13,192 +13,316 @@
 </head>
 
 <body>
-
+    <!-- Start of Container that will have the rest off Landing-page-->
     <main id="container">
 
+        <!-- Start of the Header off page-->
         <header id="header">
 
+
+            <!-- Menu with the logo and the navigation bar-->
             <div id="menu">
 
-                <a href="/">
-                    <img class="logo" src="img/logo.png" alt="logo" />
+                <!-- Logo image of page-->
+                <a class="logo" href="/">
+                    <img class="logo-img" src="img/logo.png" alt="logo" />
                 </a>
-             <!--   
-                <div class="search">
 
-                    <input type="search" name="search" id="search">
-                    <button type="submit">
-                        <img src="img/search.png" alt="Search in the web site" />
-                    </button>
-                </div>
-            -->
+                <!-- Responsive menu -->
                 <label for="carte" class="open_carte">&#9776;</label>
                 <input type="checkbox" id="carte">
 
                 <ul class="navigation">
                     <li>
-                        <a href="/">
-                            HOME
-                        </a>
+                        <a href="/">HOME</a>
                     </li>
                     <li>
-                        <a href="/">
-                            ABOUT US
-                        </a>
+                        <a href="/">ABOUT</a>
                     </li>
                     <li>
-                        <a href="/">
-                            SERVICE
-                        </a>
+                        <a href="/">SERVICE</a>
                     </li>
                     <li>
-                        <a href="/">
-                            PAGES
-                        </a>
+                        <a href="/">PAGES</a>
                     </li>
                     <li>
-                        <a href="/">
-                            BLOG
-                        </a>
+                        <a href="/">BLOG</a>
                     </li>
                     <li>
-                        <a href="/">
-                            CONTACT US
-                        </a>
+                        <a href="/">CONTACT</a>
                     </li>
                 </ul>
+
+                <!-- Responsive search button division -->
+                <div class="search">
+
+                    <input type="text" name="search" class="search-txt" placeholder="Search">
+                    <button type="submit" class="search-btn">
+
+                        <img class="search-icon" src="img/search.png" alt="Search in the web site" />
+
+                    </button>
+                </div>
             </div>
         </header>
 
+        <!-- End of the header-->
 
+        <!-- Automatic Carousel -->
         <div id="carousel">
 
-            <img src="img/anterior.png" alt="Voltar uma imagem">
-            <img src="img/banner.png" alt="">
-            <img src="img/proximo.png" alt="Proxima imagem">
+            <img class="back" src="img/anterior.png" alt="Voltar uma imagem">
+            <div class="carousel-items">
+                <img class="carousel-item first" src="img/banner.png" alt="Welcome to our Web Site!">
+                <img class="carousel-item" src="img/banner.png" alt="Welcome to our Web Site!">
+                <img class="carousel-item" src="img/banner.png" alt="Welcome to our Web Site!">
+                <img class="carousel-item" src="img/banner.png" alt="Welcome to our Web Site!">
+            </div>
+            <img class="next" src="img/proximo.png" alt="Proxima imagem">
 
         </div>
 
-        <section id="content">
-            <h2>
-                Lorem ipsum is simply dummy text of the printing
-            </h2>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make atype specimen book. It has survived not only five centuries.
-            </p>
-            <div>
-                <img src="img/screen.png" alt="">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting of the industry. Lorem Ipsum
-                    has been
-                </p>
-            </div>
-            <div>
-                <img src="img/edit.png" alt="">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting of the industry. Lorem Ipsum
-                    has been
-                </p>
-            </div>
-            <div>
-                <img src="img/content.png" alt="">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting of the industry. Lorem Ipsum
-                    has been
-                </p>
-            </div>
-        </section>
-        <section id="photos">
-            <ul>
-                <li>
-                    <img src="img/policeCar.png" alt="">
-                    <h3>
-                        Lorem Ipsum is simply
-                    </h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                        industry. Lorem Ipsum has been the and scrambled it. atype specimen
-                    </p>
-                </li>
-                <li>
-                    <img src="img/tree.png" alt="">
-                    <h3>
-                        Lorem Ipsum is simply
-                    </h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                        industry. Lorem Ipsum has been the and scrambled it. atype specimen
-                    </p>
-                </li>
-                <li>
-                    <img src="img/wheat.png" alt="">
-                    <h3>
-                        Lorem Ipsum is simply
-                    </h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                        industry. Lorem Ipsum has been the and scrambled it. atype specimen
-                    </p>
-                </li>
-                <li>
-                    <img src="img/tree.png" alt="">
-                    <h3>
-                        Lorem Ipsum is simply
-                    </h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                        industry. Lorem Ipsum has been the and scrambled it. atype specimen
-                    </p>
-                </li>
-                <li>
-                    <img src="img/wheat.png" alt="">
-                    <h3>
-                        Lorem Ipsum is simply
-                    </h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                        industry. Lorem Ipsum has been the and scrambled it. atype specimen
-                    </p>
-                </li>
-                <li>
-                    <img src="img/policeCar.png" alt="">
-                    <h3>
-                        Lorem Ipsum is simply
-                    </h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                        industry. Lorem Ipsum has been the and scrambled it. atype specimen
-                    </p>
-                </li>
+        <div id="content">
 
-            </ul>
-        </section>
+            <article class="firstArticle">
+                <article class="article-title">
+                    <h2>
+                        LOREM IPSUM IS <strong> SIMPLY DUMMY </strong> OF THE PRINTING.
+                    </h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and scrambled it to make atype specimen book. It has survived not only five centuries.
+                    </p>
+                </article>
 
-        <div id="partners">
-            <ul>
-                <li>
-                    <img src="img/dribbble.png" alt="">
-                </li>
-                <li>
-                    <img src="img/leopards.png" alt="">
-                </li>
-                <li>
-                    <img src="img/behance.png" alt="">
-                </li>
-                <li>
-                    <img src="img/puma.png" alt="">
-                </li>
-            </ul>
+                <section class="article-items">
+                    <article class="article-item">
+                        <img src="img/screen.png" alt="">
+                        <h3>
+                            <strong>Lorem Ipsum</strong> is simply
+                        </h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting of the industry. Lorem
+                            Ipsum
+                            has been
+                        </p>
+                    </article>
+                    <article class="article-item">
+                        <img src="img/edit.png" alt="">
+                        <h3>
+                            <strong>Lorem Ipsum</strong> is simply
+                        </h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting of the industry. Lorem
+                            Ipsum
+                            has been
+                        </p>
+                    </article>
+                    <article class="article-item">
+                        <img src="img/content.png" alt="">
+                        <h3>
+                            <strong>Lorem Ipsum</strong> is simply
+                        </h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting of the industry. Lorem
+                            Ipsum
+                            has been
+                        </p>
+                    </article>
+                </section>
+            </article>
+            <div id="photos">
+                <div class="photos-lst">
+                    <ul>
+                        <li>
+                            <img src="img/policeCar.png" alt="">
+                            <div class="legend">
+                                <h3>
+                                    Lorem Ipsum is simply
+                                </h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/tree.png" alt="">
+                            <div class="legend">
+                                <h3>
+                                    Lorem Ipsum is simply
+                                </h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/wheat.png" alt="">
+                            <div class="legend">
+                                <h3>
+                                    Lorem Ipsum is simply
+                                </h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/tree.png" alt="">
+                            <div class="legend">
+                                <h3>
+                                    Lorem Ipsum is simply
+                                </h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/wheat.png" alt="">
+                            <div class="legend">
+                                <h3>
+                                    Lorem Ipsum is simply
+                                </h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/policeCar.png" alt="">
+                            <div class="legend">
+                                <h3>
+                                    Lorem Ipsum is simply
+                                </h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting of the lore
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div id="partners">
+                <div class="partners-lst">
+                    <ul class="partners-items">
+                        <li class="partners-item">
+                            <a href="https://dribbble.com/">
+                                <img src="img/dribbble.png" alt="">
+                            </a>
+                        </li>
+                        <li class="partners-item">
+                            <a href="https://www.facebook.com/leopardsonline/">
+                                <img src="img/leopards.png" alt="">
+                            </a>
+                        </li>
+                        <li class="partners-item">
+                            <a href="https://www.behance.net/">
+                                <img src="img/behance.png" alt="">
+                            </a>
+                        </li>
+                        <li class="partners-item">
+                            <a href="https://www.about.puma.com/">
+                                <img src="img/puma.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div id="footer-content">
+                <div class="footer-content-items">
+                    <div class="popular-posts">
+                        <h3>
+                            Popular Post
+                        </h3>
+                        <div class="posts">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing
+                            </p>
+                            <div class="posts-legend">
+                                <img src="./img/clock.png" alt="">
+                                <span>
+                                    24 - May 2021
+                                </span>
+                            </div>
+                        </div>
+                        <div class="posts">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing
+                            </p>
+                            <div class="posts-legend">
+                                <img src="./img/clock.png" alt="">
+                                <span>
+                                    24 - May 2021
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <h3>
+                            Tags
+                        </h3>
+                        <p>
+                            apps <strong>blog</strong> christmas cms coda concert <strong>daily design</strong> develop
+                            dialog drinks envato food fun gallery gift holiday icon <strong>illustration</strong> ipad
+                            iphone journal <strong>jquery</strong> label link marketing mobile motion music photo
+                            <strong>profession</strong> quotation recipes show sound strategy tv typography
+                            <strong>video</strong>
+                        </p>
+                    </div>
+                    <div class="little-aboutus">
+                        <h3>
+                            A little about us
+                        </h3>
+                        <P>
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look
+                            even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
+                            sure there isn't anything.
+                        </P>
+                    </div>
+                    <div class="get-in-touch">
+                        <h3>
+                            Get in touch
+                        </h3>
+                        <P>
+                            Lorem Ipsum is simply dummy of the printing and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dummy text ever since.
+                        </P>
+                        <ul>
+                            <li>
+                                <img src="./img/pointer.png" alt="">
+                                <a href="">Rio Grande do Sul</a>
+                            </li>
+                            <li>
+                                <img src="./img/email.png" alt="">
+                                <a href="">arthurfdarosa@gmail.com</a>
+                            </li>
+                            <li>
+                                <img src="./img/telefoneico.png" alt="">
+                                <a href="">+55 (51) 99320-7990</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
-    <footer>
+    <footer id="footer">
 
 
     </footer>
-    
+
     </main>
 </body>
 
