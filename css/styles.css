@@ -598,9 +598,391 @@
 */
 
     @media only screen and (min-width: 800px){
+    /* General */
+            
+    #container {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    /* General */
+    
+    /* Menu */
+
+    #header {
+        background-color: var(--dark-background);
         
+        width: 100%;
+        height: 6rem;
+    }
+    
+    #menu {
+        display: flex;
+        align-items: center;
+        justify-content:center;  
+        
+        height: 100%;
+        width: 80%;
+
+        margin: auto;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: unset;
+        align-items: center;
+        justify-content: center;
+        
+        position: unset;
+
+        top: 0;
+        height: 0;
+        
+        width: 60%;
+    }
+
+    .navigation li {
+        line-height: 0;
+        
+        font-size: .9rem;
+        
+        width: 20%;
+    }
+    
+    .navigation li a {
+        color: var(--menu-color);
+
+        padding: 0.3em;
+    }
+    
+    .navigation li a:hover {
+        color: var(--menu-hover);
+        
+        border-bottom: 1px solid var(--menu-hover);
+    }
+
+
+    .open_carte{
+        display: none;
+    }
+
+    #carte {
+        display: none;
+    }
+
+    /* Menu */
+
+    /* Search Button */
+
+    .search-btn {
+        background: var(--dark-background);
+        border-radius: 50%;
+        color: var(--light-background);
+        
+        float: right;
+        
+        align-items: center;
+        justify-content: center;
+        transition: 0.4s;
+        
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .search-btn > .search-icon {
+        font-size: 60px;
+    }
+    
+    .search-txt {
+        border: none;
+        background: none;
+        outline: none;
+        padding: 0;
+        color: var(--light-background);
+        font-size: 16px;
+        transition: 0.6s;
+        width: 0px;
+        font-weight: bold;
+    }
+
+    /* Search Button */
+
+    /* Article */
+
+    .firstArticle {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .header-title h2{
+        font-weight: normal;
+        margin-bottom: 1rem;
+    }
+    
+    .header-title p{
+        font-size: .8rem;
+    
+    }
+
+    .article-items {
+        width: 80%;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: center;
+    }
+    
+    .article-item {        
+        padding: 1rem;
+    }
+    
+    .article-item h3{
+        font-weight: normal;
+        margin: .5rem 0;
+    
+    }
+    
+    .article-item p{
+        font-size: .7rem;
+    }
+    
+    .article-item:nth-child(2) {
+        margin-top: 4rem;
+    }
+    
+    /* Article */
+    
+    /* Photos */
+    
+    #photos {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #photos:before {
+        width: 100%;
+        display: inline-block;
+        content: '';
+        height: 3.1rem;
+        background: #ffffff;
+        background-image: url('../img/setinha.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .photos-lst {
+        margin: 0 auto;
+        padding: 3rem;
+
+        width: 80%;
+        height: auto;
+    }
+    
+    .photos-lst ul{
+        height: 80%;
+
+        display: grid;
+        
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+
+    }
+
+    .photos-lst ul li img{
+        width: 100%;
+    }
+    
+    .photos-lst ul li .legend{
+        margin: .5em;
+        padding: 0;
+    }
+    
+    .photos-lst ul li .legend h3{
+        font-size: .8em;
+    }
+    
+    .photos-lst ul li .legend p{
+        font-size: .7em;
+    }
+    
+    /* Photos */
+    
+    /* Partners */
+    
+    #partners {
+        width: 100%;
+    }
+    
+    .partners-lst {
+        width: 80%;
+        margin: 2rem auto;
+    }
+        
+    .partners-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        overflow-x: unset;
+        scroll-snap-type: none;
+        scroll-behavior: unset;
+    }
+    
+    .partners-item {
+        flex: unset;
+        width: 100%;
+    }
+    
+    /* Partners */
+    
+    /* Footer Content */
+
+    #footer-content {
+        width: 100%;
+
+        background: var(--footer-background);
+    }
+
+    .footer-content-items {
+        width: 80%;
+        
+        margin: 0 auto;
+        padding: 2rem 0;
+        
+        text-align: left;
+    }
+
+    .footer-content-items div{
+        margin-bottom: 2em;
+    }
+
+    .footer-content-items div h3 {
+        text-align: center;
+
+        margin-bottom: .5rem;
+
+        color: var(--light-background);
+
+        font-weight: normal;
+    }
+
+    .footer-content-items div p {
+        font-size: .8em;
+        text-align: center;
+        
+        color: var(--photos-background);
+
+        opacity: .7;
+    }
+
+    .footer-content-items div span {
+        font-size: .8em;
+        text-align: center;
+    }
+
+    .footer-content-items div p strong {
+        font-size: 1rem;
+        font-weight: 400;
+        
+        color: var(--light-background);
+    }
+
+    .popular-posts .posts:not(:last-child) {
+        padding-bottom: 1rem;
+    }
+
+    .popular-posts .posts:last-child {
+        padding-top: 1rem;
+
+        border-top: 1px solid var(--subtitle-color)
+    }
+
+    .popular-posts .posts-legend{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: .5rem;
+    }
+
+
+    .popular-posts .posts-legend img{
+        margin-right: .5rem
+    }
+
+    .get-in-touch p {
+        margin-bottom: 1.5rem; 
+    }
+
+    .get-in-touch ul {
+        width: 100%;
+    }
+
+    .get-in-touch ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        margin-bottom: 1rem;
+        
+        text-decoration: none;
+    }
+
+    .get-in-touch ul li a{
+        font-size: .9rem;
+        
+        color: var(--light-background);
+
+        opacity: .7;
+        
+        margin-left: 1rem;
+    }
+
+    /* Footer Content */
+    
+    /* Footer */
+
+    #footer {
+        background: var(--dark-background);
+        
+        width: 100%;
+        height: 5rem;
+    }
+
+    .footer-items {
+        width: 80%;
+
+        font-size: .8rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin: 0 auto;
+        padding: 1.5rem 2.5rem;
+    }
+
+    .footer-items .social-midea ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-items .social-midea ul li:not(:last-child){
+        margin-right: 1rem;
+    }
+
+    /* Footer */
+    }
+        @media only screen and (min-width: 1241px) {
+        /*
+        ============================================================
+        */
         /* General */
-        
+            
         #container {
             width: 100%;
             height: 100vh;
@@ -644,12 +1026,18 @@
 
         .navigation li {
             line-height: 0;
+            
             font-size: .9rem;
+            
+            width: 10%;
+            
+            margin: 0 0.6rem;
         }
         
         .navigation li a {
             color: var(--menu-color);
-
+            
+            padding: 1em;
         }
         
         .navigation li a:hover {
@@ -686,12 +1074,12 @@
             width: 2rem;
             height: 2rem;
         }
-           
-           .search-btn > .search-icon {
+        
+        .search-btn > .search-icon {
             font-size: 60px;
-           }
-           
-           .search-txt {
+        }
+        
+        .search-txt {
             border: none;
             background: none;
             outline: none;
@@ -701,7 +1089,7 @@
             transition: 0.6s;
             width: 0px;
             font-weight: bold;
-           }
+        }
 
         /* Search Button */
 
@@ -793,20 +1181,20 @@
 
         .photos-lst ul li img{
             width: 100%;
-            height: 55%;
+            height: 60%;
         }
         
         .photos-lst ul li .legend{
-            margin: .5rem;
+            margin: .5em;
             padding: 0;
         }
         
         .photos-lst ul li .legend h3{
-            font-size: .9rem;
+            font-size: 1.5em;
         }
         
         .photos-lst ul li .legend p{
-            font-size: .7rem;
+            font-size: 1em;
         }
         
         /* Photos */
@@ -980,4 +1368,4 @@
         }
 
         /* Footer */
-    }   
+        }
