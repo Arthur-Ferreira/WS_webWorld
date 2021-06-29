@@ -36,7 +36,7 @@ Before starting, you will need to have the following tools installed on your mac
 $ git clone <https://github.com/Arthur-Ferreira/WS_webWorld>
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd dev_finances
+$ cd WS_webWorld
 
 # Abra o arquivo html no navegador
 $ start .\index.html
