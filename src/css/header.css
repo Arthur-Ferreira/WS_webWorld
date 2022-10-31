@@ -1,0 +1,143 @@
+/* Variables at the Stylesheet Root*/
+
+:root {
+    --dark-background: #252323;
+    --default-background: #FFF;
+    --photos-background: #EEE;
+    --spotlight-background: #0E6BA8;
+
+    --menu-color: #A5A5A5;
+    --menu-hover: #00BAC6;
+    --subtitle-color: #7B7B7B;
+
+    --font: 'Inter', sans-serif;
+}
+
+/* General styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    
+    box-sizing: border-box;
+    font-family: var(--font);
+    
+    list-style: none;
+    text-decoration: none;
+
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+body {
+    font-size: 1.2em;
+    width: 100%;
+    height: 100%;
+}
+#spa {
+    background-color: var(--default-background);
+}
+
+#spa-header {
+    width: 100%;
+    height: 140px;
+    
+}
+
+.header-container {
+    display: block;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--dark-background);
+
+    height: 60px;
+}
+
+.logo {
+    padding: 15px 20px;
+}
+
+.social {
+    position: fixed;
+    bottom: 0px;
+
+    background-color: var(--dark-background);
+
+    width: 100%;
+    height: 50px;
+}
+.social ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social ul li{
+    margin: 5px;
+    padding: 5px 20px;
+}
+
+.header-menu {
+    display: block;
+}
+
+.open-carte {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+
+    font-size: 1.4em;
+    color: var(--menu-color);
+
+    padding: 5px 10px;
+
+    cursor: pointer;
+}
+
+#carte,
+.navigation {
+    display: none;
+}
+
+#carte:checked ~ .navigation{
+    display: block;
+}
+
+
+.navigation {
+    width: 100%;
+}
+
+.navigation ul{
+    position: fixed;
+        
+    width: 100%;
+    height: 100vh;
+    
+    background-color: var(--menu-color);
+    
+    text-align: center;
+}
+
+.navigation ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 60px;
+
+}
+
+.navigation ul li a{
+    color: var(--default-background);
+    padding: 30px 100px;
+}
+
+.navigation ul li a:hover {
+    color: var(--menu-hover);
+    border-bottom: solid 1px var(--menu-hover);
+    
+}
