@@ -34,14 +34,14 @@ body {
     width: 100%;
     height: 100%;
 }
+
 #spa {
     background-color: var(--default-background);
 }
 
 #spa-header {
     width: 100%;
-    height: 140px;
-    
+    height: 60px;
 }
 
 .header-container {
@@ -86,6 +86,8 @@ body {
     display: block;
 }
 
+/* Open Carte Menu */
+
 .open-carte {
     position: absolute;
     top: 5px;
@@ -107,7 +109,6 @@ body {
 #carte:checked ~ .navigation{
     display: block;
 }
-
 
 .navigation {
     width: 100%;
@@ -141,3 +142,60 @@ body {
     border-bottom: solid 1px var(--menu-hover);
     
 }
+
+/* Search Button */
+
+.search {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--menu-color);
+    
+    height: 10px;
+    border-radius: 20px;
+    
+    padding: 20px 10px;
+   }
+   
+   .search:hover > .search-txt {
+    width: 200px;
+    padding: 0 15px;
+   }
+   
+   .search:hover > .search-btn {
+    background: var(--dark-background);
+   }
+   
+   .search-btn {
+    border-radius: 50%;
+    background: var(--dark-background);
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    color: var(--light-background);
+    cursor: pointer;
+    
+    width: 30px;
+    height: 30px;
+   }
+   
+   .search-btn > .search-icon {
+    font-size: 60px;
+   }
+   
+   .search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: var(--light-background);
+    font-size: 16px;
+    transition: 0.6s;
+    width: 0;
+    font-weight: bold;
+   }
