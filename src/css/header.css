@@ -3,11 +3,15 @@
 :root {
     --dark-background: #252323;
     --default-background: #FFF;
-    --photos-background: #EEE;
     --spotlight-background: #0E6BA8;
+    --photos-background: #EEE;
+    --photos-border: #c5c5c5;
 
     --menu-color: #A5A5A5;
     --menu-hover: #00BAC6;
+
+    --text-color: #818181;
+    --strong-color: #646464;
     --subtitle-color: #7B7B7B;
 
     --font: 'Inter', sans-serif;
@@ -18,10 +22,10 @@
 * {
     padding: 0;
     margin: 0;
-    
+
     box-sizing: border-box;
     font-family: var(--font);
-    
+
     list-style: none;
     text-decoration: none;
 
@@ -29,19 +33,25 @@
     max-height: 100vh;
 }
 
+html{
+    height: 100%;
+}
+
 body {
-    font-size: 1.2em;
     width: 100%;
     height: 100%;
 }
 
 #spa {
     background-color: var(--default-background);
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
 }
 
 #spa-header {
     width: 100%;
-    height: 60px;
+    height: 6%;
 }
 
 .header-container {
@@ -55,7 +65,6 @@ body {
 
     background-color: var(--dark-background);
 
-    height: 60px;
 }
 
 .logo {
@@ -69,15 +78,16 @@ body {
     background-color: var(--dark-background);
 
     width: 100%;
-    height: 50px;
+    height: 5%;
 }
-.social ul{
+
+.social ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.social ul li{
+.social ul li {
     margin: 5px;
     padding: 5px 20px;
 }
@@ -106,7 +116,7 @@ body {
     display: none;
 }
 
-#carte:checked ~ .navigation{
+#carte:checked~.navigation {
     display: block;
 }
 
@@ -114,14 +124,14 @@ body {
     width: 100%;
 }
 
-.navigation ul{
+.navigation ul {
     position: fixed;
-        
+
     width: 100%;
-    height: 100vh;
-    
+    height: 100%;
+
     background-color: var(--menu-color);
-    
+
     text-align: center;
 }
 
@@ -132,7 +142,7 @@ body {
 
 }
 
-.navigation ul li a{
+.navigation ul li a {
     color: var(--default-background);
     padding: 30px 100px;
 }
@@ -140,7 +150,7 @@ body {
 .navigation ul li a:hover {
     color: var(--menu-hover);
     border-bottom: solid 1px var(--menu-hover);
-    
+
 }
 
 /* Search Button */
@@ -155,23 +165,23 @@ body {
     justify-content: center;
 
     background: var(--menu-color);
-    
+
     height: 10px;
     border-radius: 20px;
-    
+
     padding: 20px 10px;
-   }
-   
-   .search:hover > .search-txt {
+}
+
+.search:hover>.search-txt {
     width: 200px;
     padding: 0 15px;
-   }
-   
-   .search:hover > .search-btn {
+}
+
+.search:hover>.search-btn {
     background: var(--dark-background);
-   }
-   
-   .search-btn {
+}
+
+.search-btn {
     border-radius: 50%;
     background: var(--dark-background);
     justify-content: center;
@@ -179,16 +189,16 @@ body {
     transition: 0.4s;
     color: var(--light-background);
     cursor: pointer;
-    
+
     width: 30px;
     height: 30px;
-   }
-   
-   .search-btn > .search-icon {
+}
+
+.search-btn>.search-icon {
     font-size: 60px;
-   }
-   
-   .search-txt {
+}
+
+.search-txt {
     border: none;
     background: none;
     outline: none;
@@ -198,4 +208,4 @@ body {
     transition: 0.6s;
     width: 0;
     font-weight: bold;
-   }
+}

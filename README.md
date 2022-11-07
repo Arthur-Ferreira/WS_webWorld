@@ -1,10 +1,10 @@
 <h1 align="center">
-  <img alt="Web World" src="./img/logo.png" width="150px">
+  <img alt="Web World" src="./src/img/icons/logo-icon.png" width="150px">
 </h1>
 
 
 <p align="center">
-  <img alt="Web World Site" title="WS_webWorld" src="./layOut/layOut_webWorld.png" width="50%" />
+  <img alt="Web World Site" title="WS_webWorld" src="./src/layOut/layOut_webWorld.png" width="50%" />
 </p>
 
 ## 🧰 Technologies
