@@ -1,0 +1,77 @@
+
+#carousel {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#carousel ul {
+  display: flex;
+  
+  overflow-x: auto;
+  
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  
+  -webkit-overflow-scrolling: touch;
+}
+
+#carousel ul::-webkit-scrollbar{
+  display: none;
+}
+
+
+#carousel ul li {
+  flex: none;
+
+  scroll-snap-align: start;
+
+  pointer-events: none;
+}
+
+.image-content {
+  height: 100%;
+}
+
+.image-content img {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+}
+
+#before,
+#next {
+  position: absolute;
+  top: 45%;
+  height: 2rem;
+  cursor: pointer;
+}
+
+#before {
+  left: 10%;
+}
+
+#next {
+  right: 10%;
+}
+
+#before img ,
+#next img {
+  height: 100%;
+}
+
+#before:hover {
+  opacity: .5;
+  transition: 2s;
+
+  background-color: var(--spotlight-background);
+}
+
+#next:hover {
+  opacity: .5;
+  transition: 2s;
+
+  background-color: var(--spotlight-background);
+}

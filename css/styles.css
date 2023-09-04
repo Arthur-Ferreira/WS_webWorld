@@ -1,0 +1,317 @@
+/* @import './header.css'; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-bg-300: #fdfdfd;
+  --color-bg-500: #eeeeee;
+  --color-bg-700: #4f4e50;
+  --color-bg-900: #252323;
+
+  --color-ft-100: #ffffff;
+  --color-ft-400: #8b8b8b;
+  --color-ft-900: #000000;
+
+  --menu-color: #A5A5A5;
+  --menu-hover: #00BAC6;
+
+  --text-color: #818181;
+  --strong-color: #646464;
+  --subtitle-color: #7B7B7B;
+}
+
+
+
+body {
+  font-size: 1.6rem;
+  color: var(--color-ft-400);
+  font-family: 'Inter', sans-serif;
+}
+
+
+#products {
+  text-align: center;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+#spa-container {
+  width: 100%;
+    height: 100%;
+  }
+
+  
+ 
+
+.next:checked~.first {
+    margin-left: 0;
+}
+
+.next:checked~.first {
+    margin-left: 20%;
+}
+
+.next:checked~.first {
+    margin-left: 60%;
+}
+
+.next:checked~.first {
+    margin-left: 100%;
+}
+
+#content {
+    color: var(--text-color);
+    font-size: .8em;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#content .first-article {
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.first-article h2 {
+    font-weight: normal;
+}
+
+.first-article .header-title p {
+    padding: 30px 5px;
+}
+
+
+#content strong {
+    color: var(--strong-color);
+}
+
+.article-items {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 42px
+}
+
+.article-items h3 {
+    font-weight: normal;
+    padding-bottom: 18px;
+}
+
+.article-item img {
+    padding: 20px;
+}
+
+#content .photos {
+    width: 100%;
+}
+
+.photos .photos-list {
+    background-color: var(--photos-background);
+    width: 100%;
+    height: 100%;
+
+    padding: 45px 0;
+}
+
+.photos .photos-list ul{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.photos-list ul li {
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 200px;
+    background-size: 100%;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.photos-list ul li:nth-child(1){
+    background-image: url(../img/section02/farmer-boy.png);
+}
+
+.photos-list ul li:nth-child(2){
+    background-image: url(../img/section02/tree.png);
+}
+
+.photos-list ul li:nth-child(3){
+    background-image: url(../img/section02/wheat-field.png);
+}
+
+.photos-list ul li:nth-child(4){
+    background-image: url(../img/section02/coffee-filter.png);
+}
+
+.photos-list ul li:nth-child(5){
+    background-image: url(../img/section02/common-wheat.png);
+}
+
+.photos-list ul li:nth-child(6){
+    background-image: url(../img/section02/blackberries.png);
+}
+
+
+.photos-list ul li .subtitle{
+    padding: 0px 10px 10px 10px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    
+    font-size: .75em;
+}
+
+.photos-list ul li .subtitle h3{
+    padding-bottom:5px;
+}
+
+#content .partners {
+    width: 100%;
+    height: 25%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners-list{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+}
+
+.partners-items .partners-items img {
+    width: 100%;
+    height: 100%;
+}
+  */
