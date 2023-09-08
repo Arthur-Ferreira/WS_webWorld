@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/css/carousel.css">
   <link rel="stylesheet" href="/css/header.css">
-  
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;900&display=swap" rel="stylesheet">
 
@@ -24,109 +24,115 @@
 
   <header>
     <!-- Menu with the logo and the navigation bar-->
-    <div class="logo">
-      <a href="./index.html">
-        <img class="logo-icon" src="./img/icons/logo-icon.png" alt="Logo" />
-      </a>
+    <div class="header-content">
+      <div class="logo">
+        <a href="./index.html">
+          <img class="logo-icon" src="./img/icons/logo-icon.png" alt="Logo" />
+        </a>
+      </div>
+      <!-- Logo image of page-->
+      <nav class="social-media">
+        <ul>
+          <li>
+            <a href="/">
+              <img src="./img/social/rss.png" alt="Rss Image">
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="./img/social/facebook.png" alt="Facebook Page">
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="./img/social/twitter.png" alt="Twitter Page">
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <img src="./img/social/linkedin.png" alt="Linkedin Page">
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <!-- Logo image of page-->
-    <nav class="social-media">
-      <ul>
-        <li>
-          <a href="/">
-            <img src="./img/social/rss.png" alt="Rss Image">
-          </a>
-        </li>
-        <li>
-          <a href="/">
-            <img src="./img/social/facebook.png" alt="Facebook Page">
-          </a>
-        </li>
-        <li>
-          <a href="/">
-            <img src="./img/social/twitter.png" alt="Twitter Page">
-          </a>
-        </li>
-        <li>
-          <a href="/">
-            <img src="./img/social/linkedin.png" alt="Linkedin Page">
-          </a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <!-- Responsive menu -->
   <aside class="menu">
-    <div id="mobile-menu">&#9776;</div>
+    <div class="menu-content">
+      <div id="mobile-menu">&#9776;</div>
 
-    <nav class="navigation">
-      <ul>
-        <li>
-          <a href="./index.html">HOME</a>
-        </li>
-        <li>
-          <a href="./index.html">ABOUT</a>
-        </li>
-        <li>
-          <a href="./index.html">SERVICE</a>
-        </li>
-        <li>
-          <a href="./index.html">PAGES</a>
-        </li>
-        <li>
-          <a href="./index.html">BLOG</a>
-        </li>
-        <li>
-          <a href="./index.html">CONTACT</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a href="./index.html">HOME</a>
+          </li>
+          <li>
+            <a href="./index.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="./index.html">SERVICE</a>
+          </li>
+          <li>
+            <a href="./index.html">PAGES</a>
+          </li>
+          <li>
+            <a href="./index.html">BLOG</a>
+          </li>
+          <li>
+            <a href="./index.html">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
 
-    <!-- Responsive search button division -->
-    <div class="search">
-      <input type="text" name="search" class="search-txt" placeholder="Search">
-      <button type="submit" class="search-btn">
-        <img class="search-icon" src="img/icons/search-icon.png" alt="Search in the web site" />
-      </button>
+      <!-- Responsive search button division -->
+      <div class="search">
+        <input type="text" name="search" class="search-txt" placeholder="Search">
+        <button type="submit" class="search-btn">
+          <img class="search-icon" src="img/icons/search-icon.png" alt="Search in the web site" />
+        </button>
+      </div>
     </div>
   </aside>
 
   <main id="spa-container">
     <!-- Automatic Carousel -->
     <section id="carousel">
-      <div id="before">
-        <img src="/img/banner/anterior.png" alt="Welcome to our Web Site!">
-      </div>
-      <ul>
-        <li>
-          <div class="image-content">
-            <img src="/img/banner/banner.png" alt="Welcome to our Web Site!">
-          </div>
-        </li>
-        <li>
-          <div class="image-content">
-            <img src="/img/banner/banner.png" alt="Welcome to our Web Site!">
-          </div>
-        </li>
-        <li>
-          <div class="image-content">
-            <img src="/img/banner/banner.png" alt="Welcome to our Web Site!">
-          </div>
-        </li>
-        <li>
-          <div class="image-content">
-            <img src="/img/banner/banner.png" alt="Welcome to our Web Site!">
-          </div>
-        </li>
-      </ul>
-      <div id="next">
-        <img src="/img/banner/proximo.png" alt="Welcome to our Web Site!">
-      </div>
+      <article class="carousel-content">
+        <div id="before">
+          <img src="/img/banner/anterior.png" alt="Welcome to our Web Site!">
+        </div>
+        <ul>
+          <li>
+            <div class="image-content">
+              <img src="/img/banner/banner.png" alt="Welcome to our Web Site!">
+            </div>
+          </li>
+          <li>
+            <div class="image-content">
+              <img src="/img/banner/banner.png" alt="Welcome to our Web Site!">
+            </div>
+          </li>
+          <li>
+            <div class="image-content">
+              <img src="/img/banner/banner.png" alt="Welcome to our Web Site!">
+            </div>
+          </li>
+          <li>
+            <div class="image-content">
+              <img src="/img/banner/banner.png" alt="Welcome to our Web Site!">
+            </div>
+          </li>
+        </ul>
+        <div id="next">
+          <img src="/img/banner/proximo.png" alt="Welcome to our Web Site!">
+        </div>
+      </article>
     </section>
 
     <section id="products">
-      <article>
+      <article class="products-content">
         <div class="header-title">
           <h2>
             LOREM IPSUM IS <strong> SIMPLY DUMMY </strong> OF THE PRINTING.
@@ -144,10 +150,9 @@
           </p>
         </div>
 
-        <ul>
+        <ul id="products-list">
           <li>
-
-            <div class="article-item">
+            <article class="product-item">
               <img src="./img/section01/iMac.png" alt="Screen photo">
               <h3>
                 <strong>Lorem Ipsum</strong> is simply
@@ -157,11 +162,10 @@
                 Ipsum
                 has been
               </p>
-            </div>
+            </article>
           </li>
           <li>
-
-            <div class="article-item">
+            <article class="product-item">
               <img src="./img/section01/pencil-with-paper.png" alt="Take notes">
               <h3>
                 <strong>Lorem Ipsum</strong> is simply
@@ -171,11 +175,11 @@
                 Ipsum
                 has been
               </p>
-            </div>
+            </article>
           </li>
           <li>
 
-            <div class="article-item">
+            <article class="product-item">
               <img src="./img/section01/photo.png" alt="Picture photo">
               <h3>
                 <strong>Lorem Ipsum</strong> is simply
@@ -185,108 +189,126 @@
                 Ipsum
                 has been
               </p>
-            </div>
+            </article>
           </li>
         </ul>
       </article>
     </section>
 
-    <section div class="photos">
-      <div class="photos-list">
-        <ul>
+    <section id="photos">
+      <article>
+        <ul class="photos-list">
           <li>
-            <div class="subtitle">
-              <h3>
-                Lorem Ipsum is simply
-              </h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting of the
-              </p>
+            <div class="list-content">
+              <img id="farmer-boy" src="/img/section02/farmer-boy.png" alt="">
+              <div class="subtitle">
+                <h3>
+                  Lorem Ipsum is simply
+                </h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                </p>
+              </div>
             </div>
           </li>
           <li>
-            <div class="subtitle">
-              <h3>
-                Lorem Ipsum is simply
-              </h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting of the
-              </p>
+            <div class="list-content">
+              <img src="/img/section02/tree.png" alt="">
+              <div class="subtitle">
+                <h3>
+                  Lorem Ipsum is simply
+                </h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                </p>
+              </div>
             </div>
           </li>
           <li>
-            <div class="subtitle">
-              <h3>
-                Lorem Ipsum is simply
-              </h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting of the
-              </p>
+            <div class="list-content">
+              <img src="/img/section02/wheat-field.png" alt="">
+              <div class="subtitle">
+                <h3>
+                  Lorem Ipsum is simply
+                </h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                </p>
+              </div>
             </div>
           </li>
           <li>
-            <div class="subtitle">
-              <h3>
-                Lorem Ipsum is simply
-              </h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting of the
-              </p>
+            <div class="list-content">
+              <img src="/img/section02/coffee-filter.png" alt="">
+              <div class="subtitle">
+                <h3>
+                  Lorem Ipsum is simply
+                </h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                </p>
+              </div>
             </div>
           </li>
           <li>
-            <div class="subtitle">
-              <h3>
-                Lorem Ipsum is simply
-              </h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting of the
-              </p>
+            <div class="list-content">
+              <img src="/img/section02/common-wheat.png" alt="">
+              <div class="subtitle">
+                <h3>
+                  Lorem Ipsum is simply
+                </h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                </p>
+              </div>
             </div>
           </li>
           <li>
-            <div class="subtitle">
-              <h3>
-                Lorem Ipsum is simply
-              </h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting of the
-              </p>
+            <div class="list-content">
+              <img src="/img/section02/strawberry.png" alt="">
+              <div class="subtitle">
+                <h3>
+                  Lorem Ipsum is simply
+                </h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting of the
+                </p>
+              </div>
             </div>
           </li>
 
         </ul>
-      </div>
+      </article>
     </section>
 
     <section class="partners">
-      <ul class="partners-list">
-        <li class="partners-item">
-          <a href="https://dribbble.com/">
-            <img src="./img/costumers-logo/dribbble.png" alt="Dribbble Image">
-          </a>
-        </li>
-        <li class="partners-item">
-          <a href="https://www.facebook.com/leopardsonline/">
-            <img src="./img/costumers-logo/leopards.png" alt="Leopards Image">
-          </a>
-        </li>
-        <li class="partners-item">
-          <a href="https://www.behance.net/">
-            <img src="./img/costumers-logo/behance.png" alt="Behance Image">
-          </a>
-        </li>
-        <li class="partners-item">
-          <a href="https://www.about.puma.com/">
-            <img src="./img/costumers-logo/puma.png" alt="Puma Image">
-          </a>
-        </li>
-      </ul>
+      <article>
+        <ul class="partners-list">
+          <li class="partners-item">
+            <a href="https://dribbble.com/">
+              <img src="./img/costumers-logo/dribbble.png" alt="Dribbble Image">
+            </a>
+          </li>
+          <li class="partners-item">
+            <a href="https://www.facebook.com/leopardsonline/">
+              <img src="./img/costumers-logo/leopards.png" alt="Leopards Image">
+            </a>
+          </li>
+          <li class="partners-item">
+            <a href="https://www.behance.net/">
+              <img src="./img/costumers-logo/behance.png" alt="Behance Image">
+            </a>
+          </li>
+          <li class="partners-item">
+            <a href="https://www.about.puma.com/">
+              <img src="./img/costumers-logo/puma.png" alt="Puma Image">
+            </a>
+          </li>
+        </ul>
+      </article>
     </section>
-  </main>
 
-  <footer id="footer">
-    <div id="footer-content">
+    <section id="footer-content">
       <div class="footer-content-items">
         <div class="popular-posts">
           <h3>
@@ -375,7 +397,10 @@
           </ul>
         </div>
       </div>
-    </div>
+    </section>
+  </main>
+
+  <footer id="footer">
     <div class="footer-items">
       <p>
         &copy; 2021 Web World. All rights reserved. Theme by cssauther
