@@ -41,8 +41,9 @@ body {
   text-align: center;
 }
 
-.products-content {
+#products .products-content {
   width: 80%;
+  padding: 5rem 0;
   margin: 0 auto;
 }
 
@@ -82,14 +83,16 @@ body {
   background-color: var(--color-bg-500);
 }
 
-#photos article {
+#photos > article {
   width: 80%;
+  padding: 5rem 0;
   margin: 0 auto;
 }
 
 .photos-list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   padding: 3rem 0;
 
@@ -98,24 +101,17 @@ body {
 }
 
 .list-content {
-  position: relative;
-
-  border-radius: 10% 10% 0 0 ;
-  overflow: hidden;
+  border: 1px solid #c5c5c5;
 }
 
 .list-content img {
   width: 100%;
-  height: 100%;
-
-  border: 1px solid #c5c5c5;
   object-fit: cover;
 }
 
 .subtitle {
-  position: absolute;
-  bottom: 10%;
-  left: 5%;
+  width: fit-content;
+  padding: 1rem;
 }
 
 
