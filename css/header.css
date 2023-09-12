@@ -40,7 +40,12 @@ nav ul {
   align-items: center;
   justify-content: space-between;
 }
+/* 
+#menu-desktop {
 
+  display: none;
+}
+ */
 #mobile-menu {
   font-size: 2.5rem;
   padding: 1rem;
@@ -73,6 +78,13 @@ nav ul {
 .navigation li a { 
   display: block;
   padding: 1rem;
+  text-decoration: none;
+}
+
+.navigation li a:hover, 
+.navigation li a:active { 
+  color: var(--menu-hover);
+  border-bottom: 2px solid var(--menu-hover);
 }
 
 .search {
@@ -123,3 +135,24 @@ nav ul {
   font-weight: bold;
 }
 
+
+@media (min-width: 48rem) {
+  .menu-content {
+  }
+
+  #mobile-menu {
+    display: none;
+  }
+
+  .navigation ul {
+    height: 100%;
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .navigation {
+    position: static;
+    text-align: center;
+    display: block;
+  }
+}
